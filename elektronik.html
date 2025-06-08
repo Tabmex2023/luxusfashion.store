@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elektronik – LUXUSFASHION.store</title>
+  <meta name="description" content="Luxus-Elektronik in 1:1 Qualität direkt vom Hersteller.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      height: 100px;
+    }
+
+    .logo img {
+      height: 80px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #777; }
+
+    .content {
+      padding: 140px 20px 60px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      width: 300px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card .details {
+      padding: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    .telegram-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0088cc;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      z-index: 999;
+    }
+
+    .telegram-float:hover {
+      background: #0070a8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ffffff;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      color: #4ecdc4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://i.postimg.cc/1t7nb8k3/07683-B3-F-F7-AA-4793-94-F0-B3-B48446-DAC3.png" alt="LUXUSFASHION.store Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="kleidung.html">KLEIDUNG</a></li>
+        <li><a href="elektronik.html">ELEKTRONIK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h1>Elektronik in 1:1 Qualität</h1>
+    <p>Alle Artikel sind originalgetreu, hochwertig verarbeitet und direkt vom chinesischen Hersteller bezogen.</p>
+  </section>
+
+  <section class="products">
+    <!-- PRODUKT-KARTEN (Platzhalter) -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200.png?text=Produktbild" alt="Produkt">
+      <div class="details">
+        <h3>Produktname</h3>
+        <p>Kurze Beschreibung des Artikels. Hochwertige 1:1 Nachbildung. Preis: XX EUR</p>
+      </div>
+    </div>
+    <!-- Weitere Produktkarten folgen... -->
+  </section>
+
+  <!-- FIXIERTER TELEGRAM BUTTON -->
+  <a href="https://t.me/LUXUSFASHION.store" class="telegram-float" target="_blank">Telegram Support</a>
+
+  <footer>
+    <p>&copy; 2025 LUXUSFASHION.store – Alle Rechte vorbehalten</p>
+    <p>Kontakt via Telegram: <a href="https://t.me/LUXUSFASHION.store" target="_blank">@LUXUSFASHION.store</a></p>
+  </footer>
+
+</body>
+</html>
