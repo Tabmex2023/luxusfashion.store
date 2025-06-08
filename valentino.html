@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentino – LUXUSFASHION.store</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      height: 100px;
+    }
+
+    .logo img { height: 80px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #777; }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: none;
+      flex-direction: column;
+      padding: 10px;
+      min-width: 200px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    nav ul li:hover .dropdown {
+      display: flex;
+    }
+
+    .dropdown a {
+      padding: 6px 12px;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .content {
+      padding: 140px 20px 40px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .product-card .details {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .product-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    .telegram-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0088cc;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      z-index: 999;
+    }
+
+    .telegram-float:hover {
+      background: #0070a8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ffffff;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      color: #4ecdc4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://i.postimg.cc/1t7nb8k3/07683-B3-F-F7-AA-4793-94-F0-B3-B48446-DAC3.png" alt="Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <a href="#">KLEIDUNG</a>
+          <div class="dropdown">
+            <a href="balenciaga.html">Balenciaga</a>
+            <a href="burberry.html">Burberry</a>
+            <a href="calvin-klein.html">Calvin Klein</a>
+            <a href="celine.html">Celine</a>
+            <a href="chanel.html">Chanel</a>
+            <a href="dior.html">Dior</a>
+            <a href="dolce-gabbana.html">Dolce & Gabbana</a>
+            <a href="fendi.html">Fendi</a>
+            <a href="givenchy.html">Givenchy</a>
+            <a href="gucci.html">Gucci</a>
+            <a href="hermes.html">Hermès</a>
+            <a href="lacoste.html">Lacoste</a>
+            <a href="louis-vuitton.html">Louis Vuitton</a>
+            <a href="miumiu.html">Miu Miu</a>
+            <a href="moncler.html">Moncler</a>
+            <a href="off-white.html">Off-White</a>
+            <a href="prada.html">Prada</a>
+            <a href="ralph-lauren.html">Ralph Lauren</a>
+            <a href="stone-island.html">Stone Island</a>
+            <a href="the-north-face.html">The North Face</a>
+            <a href="valentino.html">Valentino</a>
+            <a href="versace.html">Versace</a>
+          </div>
+        </li>
+        <li><a href="elektronik.html">ELEKTRONIK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h1>Valentino – Kollektion</h1>
+    <p>Größen verfügbar von S bis 3XL<br />Gerne auch eigene Wunschmodelle senden – wir prüfen Verfügbarkeit.</p>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://i.postimg.cc/25W1wzzM/IMG-3713.jpg" alt="Valentino Artikel 2001">
+      <div class="details">
+        <h3>Artikel 2001</h3>
+        <p>25 EUR</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.postimg.cc/NjS4FfJz/IMG-3714.jpg" alt="Valentino Artikel 2002">
+      <div class="details">
+        <h3>Artikel 2002</h3>
+        <p>25 EUR</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.postimg.cc/Ss327J9B/IMG-3715.jpg" alt="Valentino Artikel 2003">
+      <div class="details">
+        <h3>Artikel 2003</h3>
+        <p>25 EUR</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.postimg.cc/TwDYxQys/IMG-3716.jpg" alt="Valentino Artikel 2004">
+      <div class="details">
+        <h3>Artikel 2004</h3>
+        <p>25 EUR</p>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://t.me/LUXUSFASHION.store" class="telegram-float" target="_blank">Telegram Support</a>
+
+  <footer>
+    <p>&copy; 2025 LUXUSFASHION.store – Alle Rechte vorbehalten</p>
+    <p>Kontakt via Telegram: <a href="https://t.me/LUXUSFASHION.store" target="_blank">@LUXUSFASHION.store</a></p>
+  </footer>
+
+</body>
+</html>
