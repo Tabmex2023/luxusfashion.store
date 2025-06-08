@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LUXUSFASHION.store – 1:1 Luxusmode & Elektronik</title>
   <meta name="description" content="Exklusive 1:1 Luxusartikel direkt vom Hersteller. Günstiger als TEMU & Co. – Telegram-Bestellung.">
-
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -30,12 +29,19 @@
       height: 100px;
     }
 
-    .logo img { height: 80px; }
+    .logo img {
+      height: 80px;
+    }
 
     nav ul {
       list-style: none;
       display: flex;
       gap: 30px;
+      position: relative;
+    }
+
+    nav ul li {
+      position: relative;
     }
 
     nav a {
@@ -47,6 +53,36 @@
     }
 
     nav a:hover { color: #777; }
+
+    /* Dropdown Menü */
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: none;
+      flex-direction: column;
+      padding: 10px;
+      min-width: 200px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    nav ul li:hover .dropdown {
+      display: flex;
+    }
+
+    .dropdown a {
+      padding: 6px 12px;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background-color: #f5f5f5;
+    }
 
     .hero {
       padding: 140px 20px 60px;
@@ -64,24 +100,6 @@
       max-width: 800px;
       margin: 0 auto;
       color: #444;
-    }
-
-    .info {
-      background-color: #ffffff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .info h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    .info p {
-      max-width: 850px;
-      margin: 15px auto;
-      font-size: 1.1em;
-      color: #333;
     }
 
     .categories {
@@ -115,6 +133,24 @@
       font-weight: 600;
     }
 
+    .info {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .info h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .info p {
+      max-width: 850px;
+      margin: 15px auto;
+      font-size: 1.1em;
+      color: #333;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -141,7 +177,33 @@
     <nav>
       <ul>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="kleidung.html">KLEIDUNG</a></li>
+        <li>
+          <a href="#">KLEIDUNG</a>
+          <div class="dropdown">
+            <a href="balenciaga.html">Balenciaga</a>
+            <a href="burberry.html">Burberry</a>
+            <a href="calvin-klein.html">Calvin Klein</a>
+            <a href="celine.html">Celine</a>
+            <a href="chanel.html">Chanel</a>
+            <a href="dior.html">Dior</a>
+            <a href="dolce-gabbana.html">Dolce & Gabbana</a>
+            <a href="fendi.html">Fendi</a>
+            <a href="givenchy.html">Givenchy</a>
+            <a href="gucci.html">Gucci</a>
+            <a href="hermes.html">Hermès</a>
+            <a href="lacoste.html">Lacoste</a>
+            <a href="louis-vuitton.html">Louis Vuitton</a>
+            <a href="miumiu.html">Miu Miu</a>
+            <a href="moncler.html">Moncler</a>
+            <a href="off-white.html">Off-White</a>
+            <a href="prada.html">Prada</a>
+            <a href="ralph-lauren.html">Ralph Lauren</a>
+            <a href="stone-island.html">Stone Island</a>
+            <a href="the-north-face.html">The North Face</a>
+            <a href="valentino.html">Valentino</a>
+            <a href="versace.html">Versace</a>
+          </div>
+        </li>
         <li><a href="elektronik.html">ELEKTRONIK</a></li>
       </ul>
     </nav>
