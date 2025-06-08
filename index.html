@@ -3,61 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>luxusfashion.store – Exklusive Mode & Elektronik</title>
-  <meta name="description" content="Luxusmode & Elektronik zu Top-Preisen. Lieferung direkt aus China innerhalb von 8–14 Tagen. Exklusiv auf luxusfashion.store.">
-
+  <title>LUXUSFASHION.store – Exklusive Marken</title>
+  <meta name="description" content="1:1 Luxusmode & Elektronik direkt aus China. Bestellung über Telegram.">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
       color: #222;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #000;
-      color: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 15px 30px;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
     }
 
-    .logo {
-      font-size: 1.6em;
-      font-weight: bold;
-    }
-
-    .logo .dot {
-      color: #25D366;
+    .logo img {
+      height: 50px;
     }
 
     nav ul {
+      list-style: none;
       display: flex;
       gap: 20px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
     }
 
     nav a {
-      color: white;
       text-decoration: none;
-    }
-
-    .whatsapp a {
-      color: #25D366;
+      color: #333;
       font-weight: bold;
-      text-decoration: none;
     }
 
     .hero {
+      padding: 100px 20px 40px; /* Add top padding due to fixed header */
       text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(120deg, #111, #444);
-      color: white;
     }
 
     .hero h1 {
@@ -67,68 +60,31 @@
 
     .hero p {
       font-size: 1.2em;
-    }
-
-    .hero .btn-primary {
-      display: inline-block;
-      padding: 12px 25px;
-      margin-top: 20px;
-      background-color: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     .info {
+      background-color: #f2f2f2;
       padding: 40px 20px;
-      background-color: #fff;
       text-align: center;
     }
 
-    .categories {
-      padding: 40px 20px;
-      background: #efefef;
-      text-align: center;
+    .info h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
     }
 
-    .categories h2 {
-      margin-bottom: 20px;
-    }
-
-    .grid {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      max-width: 300px;
-      overflow: hidden;
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      max-width: 100%;
-      height: auto;
-      border-bottom: 2px solid #ddd;
+    .info p {
+      max-width: 800px;
+      margin: 10px auto;
     }
 
     footer {
-      background: #000;
-      color: white;
       text-align: center;
       padding: 20px;
+      background: #000;
+      color: white;
     }
 
     footer a {
@@ -138,60 +94,60 @@
   </style>
 </head>
 <body>
+
+  <!-- FIXIERTES HEADER-MENÜ -->
   <header>
-    <div class="logo">luxusfashion<span class="dot">.</span>store</div>
+    <div class="logo">
+      <img src="https://i.postimg.cc/1t7nb8k3/07683-B3-F-F7-AA-4793-94-F0-B3-B48446-DAC3.png" alt="LUXUSFASHION.store Logo" />
+    </div>
     <nav>
       <ul>
-        <li><a href="#">Startseite</a></li>
-        <li><a href="#">Kleidung</a></li>
-        <li><a href="#">Elektronik</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">KLEIDUNG</a></li>
+        <li><a href="#">ELEKTRONIK</a></li>
       </ul>
     </nav>
-    <div class="whatsapp">
-      <a href="https://wa.me/49123456789" target="_blank">💬 WhatsApp-Support</a>
-    </div>
   </header>
 
+  <!-- WELCOME SECTION -->
   <section class="hero">
-    <h1>Luxusmode & High-End-Elektronik</h1>
-    <p>Markenqualität. Sensationelle Preise. Direkt zu dir nach Hause.</p>
-    <a href="#shop" class="btn-primary">Jetzt shoppen</a>
-  </section>
-
-  <section class="info">
-    <h2>🚚 Direktlieferung – Kein Zwischenhändler</h2>
+    <h1>Willkommen bei LUXUSFASHION.store</h1>
     <p>
-      Auf Grund globaler Zoll-Situation versenden wir deine Bestellung
-      <strong>direkt aus unserem China-Zentrum</strong>. In der Regel erreicht dich deine Ware
-      <strong>in 8–14 Tagen</strong>.
+      Deine Adresse für exklusive 1:1 Luxusmode & Elektronik – direkt vom Hersteller, ohne Zwischenhändler.
+      Qualität wie im Store, Preise wie im Großhandel.
     </p>
-    <p>Exklusive Preise – volle Transparenz – 100% abgesicherter Versand.</p>
   </section>
 
-  <section class="categories" id="shop">
-    <h2>Unsere Top-Kategorien</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Luxusmode" alt="Luxusmode" />
-        <h3>Luxusmode</h3>
-        <p>Top-Marken wie Gucci, Prada & mehr zu stark reduzierten Preisen.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Elektronik" alt="Elektronik" />
-        <h3>Elektronik</h3>
-        <p>Handys, Kopfhörer & Gadgets direkt vom Hersteller. Original & garantiert.</p>
-      </div>
-    </div>
+  <!-- INFOTEXT ZU TEMU UND BESTELLUNG -->
+  <section class="info">
+    <h2>🛍️ Direkt von TEMU – für den deutschen Markt</h2>
+    <p>
+      Diese Plattform wurde in Zusammenarbeit mit <strong>TEMU</strong> exklusiv für den deutschen Markt erstellt, 
+      um <strong>Luxusmarken in 1:1 Qualität</strong> direkt an dich zu liefern – 
+      <strong>ohne Zollstress</strong>, ohne Aufpreis. 
+      Weltweite Zollprobleme? Kein Thema: Unsere Partner liefern <em>direkt zu dir</em> – sicher und schnell.
+    </p>
+
+    <h2>📦 So bestellst du</h2>
+    <p>
+      Bestelle ganz einfach über <strong>Telegram</strong>: <br />
+      <strong>@LUXUSFASHION.store</strong>
+    </p>
+    <p>
+      Schick uns einen Screenshot oder die Artikelnummer mit gewünschter Größe – wir kümmern uns um den Rest.
+    </p>
+
+    <h2>💸 Zahlung</h2>
+    <p>
+      Bezahle bequem per <strong>Überweisung</strong> oder <strong>Crypto</strong> (BTC/ETH/USDT).
+      <br />Sicher, schnell und unkompliziert.
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 luxusfashion.store – Alle Rechte vorbehalten</p>
-    <a href="https://wa.me/49123456789">Kontakt via WhatsApp</a>
+    <p>&copy; 2025 LUXUSFASHION.store – Alle Rechte vorbehalten</p>
+    <p>Telegram: <a href="https://t.me/LUXUSFASHION.store" target="_blank">@LUXUSFASHION.store</a></p>
   </footer>
 
-  <script>
-    console.log("luxusfashion.store geladen.");
-  </script>
 </body>
 </html>
