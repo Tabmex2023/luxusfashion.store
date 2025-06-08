@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kleidung – LUXUSFASHION.store</title>
-  <meta name="description" content="1:1 Luxusmode – Direkt vom Hersteller. Designer-Marken zu Top-Preisen.">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -52,6 +50,35 @@
 
     nav a:hover { color: #777; }
 
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: none;
+      flex-direction: column;
+      padding: 10px;
+      min-width: 200px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    nav ul li:hover .dropdown {
+      display: flex;
+    }
+
+    .dropdown a {
+      padding: 6px 12px;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background-color: #f5f5f5;
+    }
+
     .content {
       padding: 140px 20px 40px;
       text-align: center;
@@ -77,9 +104,11 @@
 
     .brand img {
       width: 100%;
-      max-height: 100px;
+      max-width: 120px;
+      height: 80px;
       object-fit: contain;
-      margin-bottom: 10px;
+      margin: 0 auto 10px;
+      display: block;
     }
 
     .brand-name {
@@ -127,12 +156,38 @@
 
   <header>
     <div class="logo">
-      <img src="https://i.postimg.cc/1t7nb8k3/07683-B3-F-F7-AA-4793-94-F0-B3-B48446-DAC3.png" alt="LUXUSFASHION.store Logo" />
+      <img src="https://i.postimg.cc/1t7nb8k3/07683-B3-F-F7-AA-4793-94-F0-B3-B48446-DAC3.png" alt="Logo" />
     </div>
     <nav>
       <ul>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="kleidung.html">KLEIDUNG</a></li>
+        <li>
+          <a href="#">KLEIDUNG</a>
+          <div class="dropdown">
+            <a href="balenciaga.html">Balenciaga</a>
+            <a href="burberry.html">Burberry</a>
+            <a href="calvin-klein.html">Calvin Klein</a>
+            <a href="celine.html">Celine</a>
+            <a href="chanel.html">Chanel</a>
+            <a href="dior.html">Dior</a>
+            <a href="dolce-gabbana.html">Dolce & Gabbana</a>
+            <a href="fendi.html">Fendi</a>
+            <a href="givenchy.html">Givenchy</a>
+            <a href="gucci.html">Gucci</a>
+            <a href="hermes.html">Hermès</a>
+            <a href="lacoste.html">Lacoste</a>
+            <a href="louis-vuitton.html">Louis Vuitton</a>
+            <a href="miumiu.html">Miu Miu</a>
+            <a href="moncler.html">Moncler</a>
+            <a href="off-white.html">Off-White</a>
+            <a href="prada.html">Prada</a>
+            <a href="ralph-lauren.html">Ralph Lauren</a>
+            <a href="stone-island.html">Stone Island</a>
+            <a href="the-north-face.html">The North Face</a>
+            <a href="valentino.html">Valentino</a>
+            <a href="versace.html">Versace</a>
+          </div>
+        </li>
         <li><a href="elektronik.html">ELEKTRONIK</a></li>
       </ul>
     </nav>
@@ -144,29 +199,28 @@
   </section>
 
   <section class="brands">
-    <!-- Bild-URLs später ersetzen -->
-    <div class="brand"><img src="#" alt="Balenciaga"><div class="brand-name">Balenciaga</div></div>
-    <div class="brand"><img src="#" alt="Burberry"><div class="brand-name">Burberry</div></div>
-    <div class="brand"><img src="#" alt="Calvin Klein"><div class="brand-name">Calvin Klein</div></div>
-    <div class="brand"><img src="#" alt="Celine"><div class="brand-name">Celine</div></div>
-    <div class="brand"><img src="#" alt="Chanel"><div class="brand-name">Chanel</div></div>
-    <div class="brand"><img src="#" alt="Dior"><div class="brand-name">Dior</div></div>
-    <div class="brand"><img src="#" alt="Dolce & Gabbana"><div class="brand-name">Dolce & Gabbana</div></div>
-    <div class="brand"><img src="#" alt="Fendi"><div class="brand-name">Fendi</div></div>
-    <div class="brand"><img src="#" alt="Givenchy"><div class="brand-name">Givenchy</div></div>
-    <div class="brand"><img src="#" alt="Gucci"><div class="brand-name">Gucci</div></div>
-    <div class="brand"><img src="#" alt="Hermès"><div class="brand-name">Hermès</div></div>
-    <div class="brand"><img src="#" alt="Lacoste"><div class="brand-name">Lacoste</div></div>
-    <div class="brand"><img src="#" alt="Louis Vuitton"><div class="brand-name">Louis Vuitton</div></div>
-    <div class="brand"><img src="#" alt="Miu Miu"><div class="brand-name">Miu Miu</div></div>
-    <div class="brand"><img src="#" alt="Moncler"><div class="brand-name">Moncler</div></div>
-    <div class="brand"><img src="#" alt="Off-White"><div class="brand-name">Off-White</div></div>
-    <div class="brand"><img src="#" alt="Prada"><div class="brand-name">Prada</div></div>
-    <div class="brand"><img src="#" alt="Ralph Lauren"><div class="brand-name">Ralph Lauren</div></div>
-    <div class="brand"><img src="#" alt="Stone Island"><div class="brand-name">Stone Island</div></div>
-    <div class="brand"><img src="#" alt="The North Face"><div class="brand-name">The North Face</div></div>
-    <div class="brand"><img src="#" alt="Valentino"><div class="brand-name">Valentino</div></div>
-    <div class="brand"><img src="#" alt="Versace"><div class="brand-name">Versace</div></div>
+    <a href="balenciaga.html" class="brand"><img src="https://i.postimg.cc/3xLMRVPc/IMG-3667.png"><div class="brand-name">Balenciaga</div></a>
+    <a href="burberry.html" class="brand"><img src="https://i.postimg.cc/hv3xhS1G/IMG-3668.png"><div class="brand-name">Burberry</div></a>
+    <a href="calvin-klein.html" class="brand"><img src="https://i.postimg.cc/50rNCjTD/IMG-3669.png"><div class="brand-name">Calvin Klein</div></a>
+    <a href="celine.html" class="brand"><img src="https://i.postimg.cc/Zq259C12/IMG-3670.png"><div class="brand-name">Celine</div></a>
+    <a href="chanel.html" class="brand"><img src="https://i.postimg.cc/DZQ320Fq/IMG-3671.png"><div class="brand-name">Chanel</div></a>
+    <a href="dior.html" class="brand"><img src="https://i.postimg.cc/fbKvDQpV/IMG-3672.png"><div class="brand-name">Dior</div></a>
+    <a href="dolce-gabbana.html" class="brand"><img src="https://i.postimg.cc/cHPh5MPh/IMG-3673.png"><div class="brand-name">Dolce & Gabbana</div></a>
+    <a href="fendi.html" class="brand"><img src="https://i.postimg.cc/9Qf9ZwnQ/IMG-3674.png"><div class="brand-name">Fendi</div></a>
+    <a href="givenchy.html" class="brand"><img src="https://i.postimg.cc/YSCwpM0V/IMG-3675.png"><div class="brand-name">Givenchy</div></a>
+    <a href="gucci.html" class="brand"><img src="https://i.postimg.cc/MGCt9mCD/IMG-3676.jpg"><div class="brand-name">Gucci</div></a>
+    <a href="hermes.html" class="brand"><img src="https://i.postimg.cc/v8k83gTm/IMG-3677.png"><div class="brand-name">Hermès</div></a>
+    <a href="lacoste.html" class="brand"><img src="https://i.postimg.cc/P54P3X0F/IMG-3678.png"><div class="brand-name">Lacoste</div></a>
+    <a href="louis-vuitton.html" class="brand"><img src="https://i.postimg.cc/V6z4ykNr/IMG-3679.png"><div class="brand-name">Louis Vuitton</div></a>
+    <a href="miumiu.html" class="brand"><img src="https://i.postimg.cc/kgFt0FRs/IMG-3680.png"><div class="brand-name">Miu Miu</div></a>
+    <a href="moncler.html" class="brand"><img src="https://i.postimg.cc/kXWsfH9h/IMG-3681.png"><div class="brand-name">Moncler</div></a>
+    <a href="off-white.html" class="brand"><img src="https://i.postimg.cc/wBMh848z/IMG-3682.png"><div class="brand-name">Off-White</div></a>
+    <a href="prada.html" class="brand"><img src="https://i.postimg.cc/QC39t0PH/IMG-3683.png"><div class="brand-name">Prada</div></a>
+    <a href="ralph-lauren.html" class="brand"><img src="https://i.postimg.cc/wjvt7tWc/IMG-3684.png"><div class="brand-name">Ralph Lauren</div></a>
+    <a href="stone-island.html" class="brand"><img src="https://i.postimg.cc/jqcdPxn8/IMG-3685.png"><div class="brand-name">Stone Island</div></a>
+    <a href="the-north-face.html" class="brand"><img src="https://i.postimg.cc/YSMs6HW3/IMG-3686.png"><div class="brand-name">The North Face</div></a>
+    <a href="valentino.html" class="brand"><img src="https://i.postimg.cc/wjTWMV8f/IMG-3687.png"><div class="brand-name">Valentino</div></a>
+    <a href="versace.html" class="brand"><img src="https://i.postimg.cc/J0xNCfn1/IMG-3688.png"><div class="brand-name">Versace</div></a>
   </section>
 
   <a href="https://t.me/LUXUSFASHION.store" class="telegram-float" target="_blank">Telegram Support</a>
