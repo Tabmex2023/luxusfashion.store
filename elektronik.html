@@ -29,18 +29,12 @@
       height: 100px;
     }
 
-    .logo img {
-      height: 80px;
-    }
+    .logo img { height: 80px; }
 
     nav ul {
       list-style: none;
       display: flex;
       gap: 30px;
-    }
-
-    nav ul li {
-      position: relative;
     }
 
     nav a {
@@ -54,7 +48,7 @@
     nav a:hover { color: #777; }
 
     .content {
-      padding: 140px 20px 60px;
+      padding: 140px 20px 40px;
       text-align: center;
     }
 
@@ -79,6 +73,12 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       overflow: hidden;
       text-align: left;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
     }
 
     .product-card img {
@@ -134,12 +134,17 @@
 
     footer a:hover { text-decoration: underline; }
   </style>
+  <script>
+    function showInfo() {
+      alert("Optisch 1:1, Originalverpackt mit gültiger Seriennummer vom  Store – perfekt für Weiterverkauf");
+    }
+  </script>
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="https://i.postimg.cc/1t7nb8k3/07683-B3-F-F7-AA-4793-94-F0-B3-B48446-DAC3.png" alt="LUXUSFASHION.store Logo" />
+      <img src="https://i.postimg.cc/1t7nb8k3/07683-B3-F-F7-AA-4793-94-F0-B3-B48446-DAC3.png" alt="Logo" />
     </div>
     <nav>
       <ul>
@@ -156,18 +161,31 @@
   </section>
 
   <section class="products">
-    <!-- PRODUKT-KARTEN (Platzhalter) -->
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200.png?text=Produktbild" alt="Produkt">
+    <div class="product-card" onclick="showInfo()">
+      <img src="https://i.postimg.cc/3xPf2xRz/IMG-3693.jpg" alt="iPhone 16 Pro">
       <div class="details">
-        <h3>Produktname</h3>
-        <p>Kurze Beschreibung des Artikels. Hochwertige 1:1 Nachbildung. Preis: XX EUR</p>
+        <h3> iPhone 16 Pro – 512 GB</h3>
+        <p>1:1 Design – nur 150 €</p>
       </div>
     </div>
-    <!-- Weitere Produktkarten folgen... -->
+
+    <div class="product-card" onclick="showInfo()">
+      <img src="https://i.postimg.cc/PJxCXhm5/IMG-3696.jpg" alt="Vision Pro">
+      <div class="details">
+        <h3> Vision Pro</h3>
+        <p>1:1 Nachbau – nur 400 €</p>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="showInfo()">
+      <img src="https://i.postimg.cc/kD3Trjbw/IMG-3697.jpg" alt="iPad Pro 13">
+      <div class="details">
+        <h3> iPad Pro 13″</h3>
+        <p>1:1 Ausführung – nur 200 €</p>
+      </div>
+    </div>
   </section>
 
-  <!-- FIXIERTER TELEGRAM BUTTON -->
   <a href="https://t.me/LUXUSFASHION.store" class="telegram-float" target="_blank">Telegram Support</a>
 
   <footer>
