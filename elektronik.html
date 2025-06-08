@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elektronik – LUXUSFASHION.store</title>
-  <meta name="description" content="Luxus-Elektronik in 1:1 Qualität direkt vom Hersteller.">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -67,14 +66,17 @@
 
     .product-card {
       width: 300px;
+      height: 400px;
       background: #fff;
       border: 1px solid #eee;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       overflow: hidden;
-      text-align: left;
+      text-align: center;
       cursor: pointer;
       transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
     }
 
     .product-card:hover {
@@ -83,11 +85,16 @@
 
     .product-card img {
       width: 100%;
-      height: auto;
+      height: 260px;
+      object-fit: cover;
     }
 
     .product-card .details {
       padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .product-card h3 {
@@ -134,9 +141,14 @@
 
     footer a:hover { text-decoration: underline; }
   </style>
+
   <script>
-    function showInfo() {
-      alert("Optisch 1:1, Originalverpackt mit gültiger Seriennummer vom  Store – perfekt für Weiterverkauf");
+    function showPopupApple() {
+      alert("Optisch 1:1, Originalverpackt mit gültiger Seriennummer vom  Store - perfekt für Weiterverkauf");
+    }
+
+    function showPopupJBL() {
+      alert("Echte Seriennummer & identische Qualität wie das Original");
     }
   </script>
 </head>
@@ -161,27 +173,35 @@
   </section>
 
   <section class="products">
-    <div class="product-card" onclick="showInfo()">
+    <div class="product-card" onclick="showPopupApple()">
       <img src="https://i.postimg.cc/3xPf2xRz/IMG-3693.jpg" alt="iPhone 16 Pro">
       <div class="details">
         <h3> iPhone 16 Pro – 512 GB</h3>
-        <p>1:1 Design – nur 150 €</p>
+        <p>1:1 – 150 EUR</p>
       </div>
     </div>
 
-    <div class="product-card" onclick="showInfo()">
+    <div class="product-card" onclick="showPopupApple()">
       <img src="https://i.postimg.cc/PJxCXhm5/IMG-3696.jpg" alt="Vision Pro">
       <div class="details">
         <h3> Vision Pro</h3>
-        <p>1:1 Nachbau – nur 400 €</p>
+        <p>1:1 – 400 EURO</p>
       </div>
     </div>
 
-    <div class="product-card" onclick="showInfo()">
-      <img src="https://i.postimg.cc/kD3Trjbw/IMG-3697.jpg" alt="iPad Pro 13">
+    <div class="product-card" onclick="showPopupApple()">
+      <img src="https://i.postimg.cc/kD3Trjbw/IMG-3697.jpg" alt="iPad Pro">
       <div class="details">
-        <h3> iPad Pro 13″</h3>
-        <p>1:1 Ausführung – nur 200 €</p>
+        <h3> iPAD PRO 13”</h3>
+        <p>1:1 – 200 EUR</p>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="showPopupJBL()">
+      <img src="https://via.placeholder.com/300x260.png?text=JBL+Lautsprecher" alt="JBL Lautsprecher">
+      <div class="details">
+        <h3>JBL Lautsprecher</h3>
+        <p>1:1 – 50 EUR</p>
       </div>
     </div>
   </section>
