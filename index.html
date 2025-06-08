@@ -59,7 +59,6 @@
     .hero {
       padding: 140px 20px 60px;
       text-align: center;
-      background-color: #ffffff;
     }
 
     .hero h1 {
@@ -91,6 +90,39 @@
       margin: 15px auto;
       font-size: 1.1em;
       color: #333;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .category {
+      width: 300px;
+      text-align: center;
+      text-decoration: none;
+      color: #222;
+      transition: transform 0.3s;
+    }
+
+    .category img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+    }
+
+    .category h3 {
+      font-size: 1.2em;
+      font-weight: 600;
     }
 
     footer {
@@ -133,6 +165,17 @@
       Exklusive 1:1 Luxusmode & Elektronik – direkt vom chinesischen Hersteller.
       Höchste Qualität, günstiger als TEMU, SHEIN und andere Plattformen.
     </p>
+  </section>
+
+  <section class="categories">
+    <a href="#kleidung" class="category">
+      <img src="https://i.postimg.cc/zX1kST28/8-E4-B1-E0-E-C51-F-435-D-B6-B1-C44-A7543-D5-DB.png" alt="Kleidung">
+      <h3>KLEIDUNG</h3>
+    </a>
+    <a href="#elektronik" class="category">
+      <img src="https://i.postimg.cc/y6jMwYqq/454-D7-F42-25-CD-490-E-B201-747779-EAB6-A5.png" alt="Elektronik">
+      <h3>ELEKTRONIK</h3>
+    </a>
   </section>
 
   <section class="info">
