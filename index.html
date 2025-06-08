@@ -4,184 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LUXUSFASHION.store – 1:1 Luxusmode & Elektronik</title>
-  <meta name="description" content="Exklusive 1:1 Luxusartikel direkt vom Hersteller. Günstiger als TEMU & Co. – Telegram-Bestellung.">
-
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     html, body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #ffffff;
       color: #222;
       line-height: 1.6;
     }
-
     header {
-      position: fixed;
-      top: 0;
-      width: 100%;
+      position: fixed; top: 0; width: 100%;
       background: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between;
       padding: 10px 40px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      z-index: 1000;
-      height: 100px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      z-index: 1000; height: 100px;
     }
-
-    .logo img {
-      height: 80px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-    }
-
-    nav ul li {
-      position: relative;
-    }
-
+    .logo img { height: 80px; }
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul li { position: relative; }
     nav a {
-      text-decoration: none;
-      color: #222;
-      font-weight: 600;
-      font-size: 1rem;
+      text-decoration: none; color: #222;
+      font-weight: 600; font-size: 1rem;
       transition: color 0.3s;
     }
-
     nav a:hover { color: #777; }
-
     .dropdown {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #fff;
-      border: 1px solid #ddd;
-      display: none;
-      flex-direction: column;
-      padding: 10px;
-      min-width: 200px;
-      max-height: 300px;
-      overflow-y: auto;
+      position: absolute; top: 100%; left: 0;
+      background: #fff; border: 1px solid #ddd;
+      display: none; flex-direction: column;
+      padding: 10px; min-width: 200px;
+      max-height: 300px; overflow-y: auto;
       z-index: 1000;
     }
-
-    nav ul li:hover .dropdown {
-      display: flex;
-    }
-
+    nav ul li:hover .dropdown { display: flex; }
     .dropdown a {
-      padding: 6px 12px;
-      color: #222;
+      padding: 6px 12px; color: #222;
       white-space: nowrap;
     }
-
-    .dropdown a:hover {
-      background-color: #f5f5f5;
-    }
-
+    .dropdown a:hover { background-color: #f5f5f5; }
     .hero {
-      padding: 140px 20px 60px;
-      text-align: center;
+      padding: 140px 20px 60px; text-align: center;
     }
-
     .hero h1 {
-      font-size: 2.8em;
-      margin-bottom: 0.5em;
-      font-weight: 600;
+      font-size: 2.8em; margin-bottom: 0.5em; font-weight: 600;
     }
-
     .hero p {
-      font-size: 1.2em;
-      max-width: 800px;
-      margin: 0 auto;
-      color: #444;
+      font-size: 1.2em; max-width: 800px;
+      margin: 0 auto; color: #444;
     }
-
     .categories {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
+      display: flex; flex-wrap: wrap;
+      justify-content: center; gap: 40px;
       padding: 60px 20px;
-      background-color: #fff;
     }
-
     .category {
-      width: 300px;
-      text-align: center;
-      text-decoration: none;
-      color: #222;
+      width: 300px; text-align: center;
+      text-decoration: none; color: #222;
       transition: transform 0.3s;
     }
-
     .category img {
-      width: 100%;
-      border-radius: 8px;
+      width: 100%; border-radius: 8px;
       margin-bottom: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-
     .category:hover { transform: translateY(-5px); }
-
     .category h3 {
-      font-size: 1.2em;
-      font-weight: 600;
+      font-size: 1.2em; font-weight: 600;
     }
-
     .info {
-      background-color: #ffffff;
-      padding: 60px 20px;
+      background-color: #ffffff; padding: 60px 20px;
       text-align: center;
     }
-
     .info h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      font-size: 2em; margin-bottom: 20px;
     }
-
     .info p {
-      max-width: 850px;
-      margin: 15px auto;
-      font-size: 1.1em;
-      color: #333;
+      max-width: 850px; margin: 15px auto;
+      font-size: 1.1em; color: #333;
     }
-
     .telegram-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #0088cc;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 30px;
-      font-weight: bold;
-      text-decoration: none;
+      position: fixed; bottom: 20px; right: 20px;
+      background: #0088cc; color: white;
+      padding: 12px 20px; border-radius: 30px;
+      font-weight: bold; text-decoration: none;
       box-shadow: 0 4px 8px rgba(0,0,0,0.15);
       z-index: 999;
     }
-
-    .telegram-float:hover {
-      background: #0070a8;
-    }
-
+    .telegram-float:hover { background: #0070a8; }
     footer {
-      text-align: center;
-      padding: 30px;
-      background: #ffffff;
-      color: #666;
+      text-align: center; padding: 30px;
+      background: #ffffff; color: #666;
       border-top: 1px solid #eee;
     }
-
     footer a {
-      color: #4ecdc4;
-      text-decoration: none;
+      color: #4ecdc4; text-decoration: none;
       font-weight: 500;
     }
-
     footer a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -228,10 +147,7 @@
 
   <section class="hero">
     <h1>Willkommen bei LUXUSFASHION.store</h1>
-    <p>
-      Exklusive 1:1 Luxusmode & Elektronik – direkt vom chinesischen Hersteller.
-      Höchste Qualität, günstiger als TEMU, SHEIN und andere Plattformen.
-    </p>
+    <p>Exklusive 1:1 Luxusmode & Elektronik – direkt vom chinesischen Hersteller. Höchste Qualität, günstiger als TEMU, SHEIN und andere Plattformen.</p>
   </section>
 
   <section class="categories">
@@ -247,24 +163,11 @@
 
   <section class="info">
     <h2>So funktioniert deine Bestellung</h2>
-    <p>
-      Wähle deine gewünschten Artikel aus (z. B. über Screenshots oder Artikelnummern).  
-      Gib uns zusätzlich die benötigte Größe durch.
-    </p>
-    <p>
-      Sende die Angaben einfach per Nachricht über Telegram an unseren offiziellen Kanal:
-      <strong>@LUXUSFASHION.store</strong>
-    </p>
-    <p>
-      Unser Team übernimmt alles Weitere. Du erhältst eine persönliche Rückmeldung mit Bestätigung und Lieferdetails.
-    </p>
-    <p>
-      Bei allen weiteren Fragen oder Bestellungen steht dir unser deutschsprachiger Kundenservice jederzeit
-      <strong>direkt über Telegram</strong> zur Verfügung.
-    </p>
+    <p>Wähle deine gewünschten Artikel aus (z. B. über Screenshots oder Artikelnummern). Gib uns zusätzlich die benötigte Größe durch.</p>
+    <p>Sende die Angaben einfach per Nachricht über Telegram an unseren offiziellen Kanal: <strong>@LUXUSFASHION.store</strong></p>
+    <p>Unser Team übernimmt alles Weitere. Du erhältst eine persönliche Rückmeldung mit Bestätigung und Lieferdetails.</p>
   </section>
 
-  <!-- Fixierter Telegram-Button -->
   <a href="https://t.me/LUXUSFASHION.store" class="telegram-float" target="_blank">Telegram Support</a>
 
   <footer>
