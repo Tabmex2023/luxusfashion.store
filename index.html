@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LUXUSFASHION.store – 1:1 Luxusmode & Elektronik</title>
   <meta name="description" content="Exklusive 1:1 Luxusartikel direkt vom Hersteller. Günstiger als TEMU & Co. – Telegram-Bestellung.">
+
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -37,7 +38,6 @@
       list-style: none;
       display: flex;
       gap: 30px;
-      position: relative;
     }
 
     nav ul li {
@@ -54,7 +54,6 @@
 
     nav a:hover { color: #777; }
 
-    /* Dropdown Menü */
     .dropdown {
       position: absolute;
       top: 100%;
@@ -149,6 +148,24 @@
       margin: 15px auto;
       font-size: 1.1em;
       color: #333;
+    }
+
+    .telegram-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0088cc;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      z-index: 999;
+    }
+
+    .telegram-float:hover {
+      background: #0070a8;
     }
 
     footer {
@@ -246,6 +263,9 @@
       <strong>direkt über Telegram</strong> zur Verfügung.
     </p>
   </section>
+
+  <!-- Fixierter Telegram-Button -->
+  <a href="https://t.me/LUXUSFASHION.store" class="telegram-float" target="_blank">Telegram Support</a>
 
   <footer>
     <p>&copy; 2025 LUXUSFASHION.store – Alle Rechte vorbehalten</p>
